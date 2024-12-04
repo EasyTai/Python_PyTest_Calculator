@@ -14,9 +14,9 @@ def run_tests(test_file_path):
 
 def main():
     # Путь к exe-файлу
-    web_calculator_path = 'C:\\Users\\neverov\\Desktop\\path\\webcalculator.exe'
+    web_calculator_path = 'C:\\Users\\Desktop\\path\\webcalculator.exe'
     # Полный путь к файлу тестов
-    test_file_path = 'C:\\Users\\neverov\\Desktop\\test_webcalculator.py'
+    test_file_path = 'C:\\Users\\Desktop\\test_webcalculator.py'
 
     # Путь к файлу журнала
     local_app_data_path = os.environ.get('LOCALAPPDATA', '')

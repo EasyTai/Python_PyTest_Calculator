@@ -51,7 +51,6 @@ def test_multiplication(api_url, x, y, expected_result):
 ])
 def test_division(api_url, x, y, expected_result):
     response = requests.post(f"{api_url}/division", json={"x": x, "y": y})
-    print('NEVEROV_POPAL_1:', response.json(), x, y, expected_result)
     data = response.json()
     assert response.status_code == 200
     if y == 0:
@@ -71,7 +70,6 @@ def test_division(api_url, x, y, expected_result):
 ])
 def test_remainder(api_url, x, y, expected_result):
     response = requests.post(f"{api_url}/remainder", json={"x": x, "y": y})
-    print('NEVEROV_POPAL_2:', response.json(), x, y, expected_result)
     assert response.status_code == 200
     data = response.json()
     if y == 0:
